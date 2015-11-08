@@ -1,0 +1,14 @@
+opam-version: "1.2"
+maintainer: "johan.mazel@gmail.com"
+authors: "Johan Mazel"
+homepage: "https://github.com/johanmazel/ocaml-robinet_parsing"
+bug-reports: "https://github.com/johanmazel/ocaml-robinet_parsing/issues"
+license: "GPL3"
+dev-repo: "https://github.com/johanmazel/ocaml-robinet_parsing.git"
+build: [
+  ["oasis" "setup"]
+  ["ocaml" "setup.ml" "-configure"]
+  ["ocaml" "setup.ml" "-build"]
+]
+install: ["ocaml" "setup.ml" "-install"]
+remove: ["ocamlfind" "remove" "admd"]
