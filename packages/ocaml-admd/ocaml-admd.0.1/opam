@@ -6,6 +6,7 @@ bug-reports: "https://github.com/johanmazel/ocaml-admd/issues"
 license: "GPL3"
 dev-repo: "https://github.com/johanmazel/ocaml-admd.git"
 build: [
+  ["oasis" "setup"]
   ["ocaml" "setup.ml" "-configure"]
   ["ocaml" "setup.ml" "-build"]
 ]
