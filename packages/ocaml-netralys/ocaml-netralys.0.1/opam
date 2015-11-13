@@ -28,5 +28,5 @@ depends: [
   "gsl"
   "jl"
   "robinet_parsing"
-  "admd"
+  "ocaml-admd"
 ]
