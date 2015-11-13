@@ -19,3 +19,14 @@ remove: [
   ["ocamlfind" "remove" "netralys_attribute_value"]
   ["ocamlfind" "remove" "netralys_ipaddr_container"]
 ]
+depends: [
+  "cstruct"
+  "pcap-format"
+  "bitstring"
+  "ipaddr"
+  "uint"
+  "gsl"
+  "jl"
+  "robinet_parsing"
+  "admd"
+]
