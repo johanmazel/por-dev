@@ -1,10 +1,10 @@
 opam-version: "1.2"
 maintainer: "johan.mazel@gmail.com"
 authors: "Johan Mazel"
-homepage: "https://github.com/johanmazel/ocaml-admd"
-bug-reports: "https://github.com/johanmazel/ocaml-admd/issues"
+homepage: "https://github.com/johanmazel/ocaml-jl"
+bug-reports: "https://github.com/johanmazel/ocaml-jl/issues"
 license: "GPL3"
-dev-repo: "https://github.com/johanmazel/ocaml-admd.git"
+dev-repo: "https://github.com/johanmazel/ocaml-jl.git"
 build: [
   ["oasis" "setup"]
   ["ocaml" "setup.ml" "-configure"]
