@@ -12,4 +12,4 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "robinet_parsing"]
-depends: ["ocamlfind" "oasis" "bitstring" "batteries"]
+depends: ["oasis" "ocamlfind" "bitstring" "batteries"]
