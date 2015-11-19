@@ -28,6 +28,7 @@ depends: [
   "ipaddr"
   "uint"
   "gsl"
+  "menhir"
   "ocaml-jl"
   "ocaml-robinet_parsing"
   "ocaml-admd"
