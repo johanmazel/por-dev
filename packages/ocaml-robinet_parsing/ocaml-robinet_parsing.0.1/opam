@@ -12,4 +12,4 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "admd"]
-depends: ["ocamlfind" "oasis"]
+depends: ["ocamlfind" "oasis" "bitstring"]
