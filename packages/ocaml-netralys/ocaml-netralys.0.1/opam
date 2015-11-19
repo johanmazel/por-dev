@@ -20,8 +20,8 @@ remove: [
   ["ocamlfind" "remove" "netralys_ipaddr_container"]
 ]
 depends: [
-  "ocamlfind"
   "oasis"
+  "ocamlfind"
   "cstruct"
   "pcap-format"
   "bitstring"
