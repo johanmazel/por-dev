@@ -12,4 +12,4 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "nac_taxonomy"]
-depends: ["ocamlfind" "oasis" "ocaml-jl" "ocaml-netralys"]
+depends: ["ocamlfind" "oasis" "menhir" "ocaml-jl" "ocaml-netralys"]
