@@ -12,3 +12,4 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "jl"]
+depends: ["batteries" "core_kernel" "core" "parmap"]
