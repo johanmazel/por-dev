@@ -12,4 +12,13 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "admd"]
-depends: ["oasis" "ocamlfind" "batteries" "core" "xmlm" "xml-light" "ipaddr"]
+depends: [
+  "oasis"
+  "ocamlfind"
+  "batteries"
+  "core"
+  "xmlm"
+  "xml-light"
+  "ipaddr"
+  "ocaml-jl"
+]
