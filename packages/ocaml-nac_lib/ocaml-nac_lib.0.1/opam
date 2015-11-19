@@ -12,4 +12,4 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "nac_lib"]
-depends: ["batteries" "ocaml-jl" "ocaml-netralys"]
+depends: ["batteries" "ocaml-jl" "ocaml-netralys" "ocaml-nac_taxonomy"]
