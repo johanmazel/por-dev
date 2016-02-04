@@ -12,4 +12,14 @@ build: [
 ]
 install: ["ocaml" "setup.ml" "-install"]
 remove: ["ocamlfind" "remove" "jl"]
-depends: ["oasis" "ocamlfind" "batteries" "core_kernel" "core" "parmap"]
+depends: [
+  "oasis"
+  "ocamlfind"
+  "batteries"
+  "core_kernel"
+  "core"
+  "parmap"
+  "comparelib"
+  "pa_sexp_conv"
+  "pa_bin_prot"
+]
