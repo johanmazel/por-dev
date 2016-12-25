@@ -1,0 +1,37 @@
+opam-version: "1.2"
+maintainer: "johan.mazel@gmail.com"
+authors: "Johan Mazel"
+homepage: "https://github.com/johanmazel/ocaml-netralys"
+bug-reports: "https://github.com/johanmazel/ocaml-netralys/issues"
+license: "GPL3"
+dev-repo: "https://github.com/johanmazel/ocaml-netralys.git"
+build: [
+  ["oasis" "setup"]
+  ["ocaml" "setup.ml" "-configure"]
+  ["ocaml" "setup.ml" "-build"]
+]
+install: ["ocaml" "setup.ml" "-install"]
+remove: [
+  ["ocamlfind" "remove" "netralys_trace_parsing"]
+  ["ocamlfind" "remove" "netralys_packet_data"]
+  ["ocamlfind" "remove" "netralys_flow"]
+  ["ocamlfind" "remove" "netralys_metrics"]
+  ["ocamlfind" "remove" "netralys_attribute_value"]
+  ["ocamlfind" "remove" "netralys_ipaddr_container"]
+]
+depends: [
+  "oasis"
+  "ocamlfind"
+  "cstruct"
+  "pcap-format"
+  "bitstring"
+  "ipaddr"
+  "uint"
+  "gsl"
+  "ppx_compare"
+  "ppx_sexp_conv"
+  "ppx_bin_prot"
+  "ocaml-jl"
+  "ocaml-robinet_parsing"
+  "ocaml-admd"
+]
