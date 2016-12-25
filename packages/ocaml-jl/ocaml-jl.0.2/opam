@@ -1,0 +1,25 @@
+opam-version: "1.2"
+maintainer: "johan.mazel@gmail.com"
+authors: "Johan Mazel"
+homepage: "https://github.com/johanmazel/ocaml-jl"
+bug-reports: "https://github.com/johanmazel/ocaml-jl/issues"
+license: "GPL3"
+dev-repo: "https://github.com/johanmazel/ocaml-jl.git"
+build: [
+  ["oasis" "setup"]
+  ["ocaml" "setup.ml" "-configure"]
+  ["ocaml" "setup.ml" "-build"]
+]
+install: ["ocaml" "setup.ml" "-install"]
+remove: ["ocamlfind" "remove" "jl"]
+depends: [
+  "oasis"
+  "ocamlfind"
+  "batteries"
+  "core_kernel"
+  "core"
+  "parmap"
+  "ppx_compare"
+  "ppx_sexp_conv"
+  "ppx_bin_prot"
+]
