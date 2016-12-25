@@ -1,0 +1,27 @@
+opam-version: "1.2"
+maintainer: "johan.mazel@gmail.com"
+authors: "Johan Mazel"
+homepage: "https://github.com/johanmazel/ocaml-admd"
+bug-reports: "https://github.com/johanmazel/ocaml-admd/issues"
+license: "GPL3"
+dev-repo: "https://github.com/johanmazel/ocaml-admd.git"
+build: [
+  ["oasis" "setup"]
+  ["ocaml" "setup.ml" "-configure"]
+  ["ocaml" "setup.ml" "-build"]
+]
+install: ["ocaml" "setup.ml" "-install"]
+remove: ["ocamlfind" "remove" "admd"]
+depends: [
+  "oasis"
+  "ocamlfind"
+  "batteries"
+  "core"
+  "xmlm"
+  "xml-light"
+  "ipaddr"
+  "ppx_compare"
+  "ppx_sexp_conv"
+  "ppx_bin_prot"
+  "ocaml-jl"
+]
